@@ -3,42 +3,74 @@
     <head>
         <meta charset="UTF-8">
         <meta author="Mike Lan">
+        <link rel="stylesheet" href="styles.css">
         <title>Mike Lan</title>
     </head>
     <body>
-        <h1>Mike Lan</h1>
-        <h4>Hi, I am Mike Lan, a Berkeley student majoring in Mathematics, with great interest in programming.</h4>
+        <div id="mainLayout">
+            <h1>Mike Lan</h1>
+            <h3>Hi, I am Mike Lan, a Berkeley student majoring in Mathematics, with great interest in programming.</h3>
+            <div class="projectItems">
+                <div class="projectGrid">
+                    <h4>Past projects</h4>
+                    <img class="image" src="compsci.jpg">
+                    <ul>
+                        <li>All the projects in CS61A.</li>
+                        <li>Most of the projects in CS61B.</li>
+                        <li>All the projects in CS61C.</li>
+                    </ul>
+                </div>
 
-        <div>
-            <h2>Past projects</h2>
-            <ul>
-                <li>All the projects in CS61A.</li>
-                <li>Most of the projects in CS61B.</li>
-                <li>All the projects in CS61C.</li>
-            </ul>
+                <div class="projectGrid">
+                    <h5>Current projects</h5>
+                    <img class="image" src="mchouse.png">
+                    <ul>
+                        <li>Here is my <a class="mylink" href="https://fullstack-decal-fa22.github.io/project1-Mike-Lan/" target="_blank" rel="noopener noreferrer">personal portfolio website</a>.</li>
+                        <li>Figure out how to pretend to understand search algorithms and neuron networks.</li>
+                        <li>Play Minecraft in my spare time.</li>
+                    </ul>
+                </div>
+                
+                <div class="projectGrid" id="noImage">
+                    <h6>Future projects</h6>
+                    <ul>
+                        <li>Code an IOS Calculator in JavaScript.</li>
+                        <li>Design a full-Stack website</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h2>Contact me</h2>
+                <p>
+                Email: mikeberkley@berkeley.edu
+                </p>
+            </div>
+        
+            <div>
+                <br><br><br><br><br><br>
+                <h3>Hey, dear visitor, not time for leaving yet. don't you want to register for my game?</h3>
+                <br>
+
+                <form>
+                    <label>Username:</label>
+                    <br>
+                    <input type="text" id="visitorname">
+                    <br>
+                    <label>Password:</label>
+                    <br>
+                    <input type="password">
+                    <br>
+                    <input type="submit" value="Register" onclick="Register()">
+                </form>
+                <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Play Game</button>
+            </div>
         </div>
 
-        <div>
-            <h2>Current projects</h2>
-            <ul>
-                <li>Here is my personal portfolio website.</li>
-                <li>Pretend to understand search algorithms and neuron networks.</li>
-                <li>Play Minecraft in my spare time.</li>
-            </ul>
-        </div>
-        
-        <div>
-            <h2>Future projects</h2>
-            <ul>
-                <li>Code an IOS Calculator in JavaScript.</li>
-                <li>Design a full-Stack website</li>
-            </ul>
-        </div>
-        
-        <h3>Contact me</h3>
-        <p>
-           <a href="http://mail.google.com/mail" target="_blank" rel="noopener noreferrer">Email</a>: mikeberkley@berkeley.edu <br>
-           Phone: 510-387-4656(Please text before calling)
-        </p>
+        <script>
+            function Register(){
+                alert(document.getElementById("visitorname").value + ", Sorry we don't have a database yet! :( But you can still play the game. :)");
+            }
+        </script>
     </body>
 </html>

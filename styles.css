@@ -1,0 +1,49 @@
+#mainLayout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projectItems{
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    align-items: center;
+    padding: 2%;
+}
+
+.projectGrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    font-size: large;
+    color:blueviolet;
+}
+
+h5{
+    font-size: large;
+    color:brown;
+}
+
+h6{
+    font-size: large;
+    color:sandybrown;
+}
+
+.mylink{
+    color:lightblue;
+}
+
+.mylink:hover{
+    color:pink;
+}
+
+
